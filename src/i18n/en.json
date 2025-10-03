@@ -1,0 +1,302 @@
+{
+  "homepage": {
+    "locale": "Language",
+    "mode": "Mode",
+    "Locations": {
+      "title": "Anywhere",
+      "description1": "Homestay",
+      "description2": "Villa",
+      "description3": "View Biển",
+      "description4": "Thiên nhiên"
+    },
+    "SelectForm": {
+      "location": "Location",
+      "find_location": "Search location",
+      "choose_location": "Choose location",
+      "none": "None",
+      "time": "Time",
+      "Add_guest": "Add guest",
+      "guest": "Guest"
+    },
+    "Footer": {
+      "row1": {
+        "emailUs": "Email Us",
+        "customerServices": "Customer Service",
+        "Partner": "Partner"
+      },
+      "row2": {
+        "title": "ABOUT",
+        "how_airbnb_works": "How Airbnb Works",
+        "newsroom": "Newsroom",
+        "investors": "Investors",
+        "airbnb_plus": "Airbnb Plus",
+        "airbnb_luxe": "Airbnb Luxe",
+        "hotel_tonight": "HotelTonight",
+        "airbnb_for_work": "Airbnb for Work",
+        "thanks_to_hosts": "Thanks to Hosts, Anything is Possible",
+        "careers": "Careers"
+      },
+      "row3": {
+        "title": "COMMUNITY",
+        "diversity_belonging": "Diversity and Belonging",
+        "accessibility_features": "Accessibility Features",
+        "airbnb_affiliates": "Airbnb Affiliates",
+        "frontline_stays": "Frontline Stays",
+        "guest_referrals": "Guest Referrals",
+        "airbnb_org": "Airbnb.org"
+      },
+      "row4": {
+        "title": "HOSTING",
+        "renting_home": "Renting out your home",
+        "host_online_experience": "Host an Online Experience",
+        "host_experience": "Host an Experience",
+        "responsible_hosting": "Responsible Hosting",
+        "resource_center": "Resource Center",
+        "community_center": "Community Center",
+        "sub": "Subscribe Newsletter",
+        "subscribe": "Subscribe",
+        "flow": "Follow us"
+      }
+    }
+  },
+  "rooms": {
+    "favourite": "Guest favorite",
+    "title": "Current room list",
+    "notRoom": "There is no room with the number of guests you want",
+    "listRoom": "Room list",
+    "Guests": "Guest",
+    "Bedrooms": "Bedroom",
+    "Beds": "Bed",
+    "Bathrooms": "Bathroom",
+    "night": "Night"
+  },
+  "message": {
+    "success": {
+      "login": "Login successful!",
+      "regester": "Registration successful!",
+      "delete": "Deleted successfully!",
+      "update": "Updated successfully!",
+      "logout": "Logout successful!",
+      "comment": "Comment submitted successfully!",
+      "successBooking": "Booking successful!"
+    },
+    "warning": {
+      "see-more": "Please log in to view personal information!",
+      "chooseLocale": "Please select a location before searching!",
+      "loginBooking": "Please log in to make a booking!",
+      "guestOne": "At least one guest is required!",
+      "guestMore": "Maximum number of guests reached!"
+    },
+    "error": {
+      "not-id": "No ID found for deletion.",
+      "chooseImage": "Please select a valid image!",
+      "delete": "Deletion failed!",
+      "update": "Update failed!",
+      "comment": "Comment submission failed!",
+      "errorBooking": "Booking failed!",
+      "notData": "No room data available!",
+      "login": "Login failed!",
+      "regester": "Registration failed!"
+    },
+    "info": {
+      "not-title": "No new titles at the moment.",
+      "seeProfile": "Go to your profile to view the information!"
+    }
+  },
+  "detailPage": {
+    "Vietnam": "Vietnam",
+    "titleProfile": "* Go to User page to see booked room information",
+    "title": "Entire Apartment - Landlord",
+    "titleLocal": "Accommodation in selected map area",
+    "titleStart": "One of the most popular homes on Airbnb based on ratings, reviews, and reliability",
+    "utilities": "Amenities included",
+    "noutilities": "No utilities included",
+    "features": [
+      {
+        "icon": "fa-home",
+        "title": "Entire home",
+        "desc": "You’ll have the premium apartment all to yourself."
+      },
+      {
+        "icon": "fa-broom",
+        "title": "Enhanced clean",
+        "desc": "This host has committed to Airbnb’s 5-step enhanced cleaning process."
+      },
+      {
+        "icon": "fa-award",
+        "title": "Superhost",
+        "desc": "Superhosts are experienced, highly rated hosts who are committed to providing great stays."
+      },
+      {
+        "icon": "fa-stopwatch",
+        "title": "Free cancellation within 48 hours",
+        "desc": "You can cancel for free within 48 hours."
+      }
+    ],
+    "amenities": {
+      "washingMachine": "Washing Machine",
+      "iron": "Iron",
+      "tv": "TV",
+      "airConditioner": "Air Conditioner",
+      "wifi": "Wi-Fi",
+      "kitchen": "Kitchen",
+      "parking": "Parking",
+      "pool": "Swimming Pool",
+      "steamIron": "Steam Iron"
+    },
+    "Platinum": "Platinum",
+    "Gold": "Gold",
+    "Silver": "Silver",
+    "checkIn": "Check in",
+    "checkOut": "Check out",
+    "cleaning": "Cleaning fee",
+    "total": "Total before tax",
+    "booking": "Booking"
+  },
+  "comment": {
+    "title": "You can only rate after experiencing the room.",
+    "button": "Evaluate",
+    "comment": "Comment",
+    "arrange": "Arrange",
+    "newest": "Newest",
+    "oldest": "Oldest",
+    "highest": "Highest",
+    "lowest": "Lowest",
+    "chooseStart": "Please select the number of stars",
+    "writeComment": "Write a comment...",
+    "noComment": "You have no review content yet!",
+    "notComment": "There are currently no comments!",
+    "Collapse": "Collapse",
+    "seeMore": "Show More"
+  },
+  "inforUser": {
+    "title": "USER INFORMATION",
+    "update": "Update photo",
+    "verify": "Verify identity",
+    "verifyUser": "Verify your identity to get a badge!",
+    "superHost": "Superhost",
+    "getBadge": "Get badge",
+    "confirmed": "CONFIRMED BY ADMIN",
+    "email": "Email address",
+    "phone": "Phone number",
+    "start": "Joined in 2025",
+    "hello": "Hello, I am",
+    "editProfile": "Edit profile",
+    "roomRented": "Rented rooms",
+    "notRoom": "You don't have any rooms yet. Would you like to book one?",
+    "deleteRoom": "Delete booked room",
+    "sureDelete": "Are you sure you want to delete the booked room?",
+    "yes": "Yes",
+    "no": "No",
+    "form": {
+      "title": "Update personal information",
+      "okText": "Update",
+      "cancelText": "Cancel",
+      "email": "Email",
+      "emailInvalid": "Invalid email!",
+      "emailRequired": "Please enter your email!",
+      "phone": "Phone number",
+      "phoneRequired": "Please enter your phone number!",
+      "phoneNumberOnly": "Must be a number",
+      "phoneLength": "Must be 10 digits",
+      "gender": "Gender",
+      "genderRequired": "Please select gender!",
+      "male": "Male",
+      "female": "Female",
+      "name": "Name",
+      "nameTooltip": "Name displayed to everyone",
+      "nameRequired": "Please enter your name!",
+      "birthday": "Date of birth",
+      "birthdayRequired": "Please select date of birth!"
+    }
+  },
+  "menu": {
+    "title": "Sign in with Google",
+    "home": "Home",
+    "room": "Room",
+    "list": "List",
+    "favourite": "Favourite",
+    "contact": "Contact",
+    "profile": "To Page User",
+    "admin": "To Page Admin",
+    "logout": "Log out",
+    "login": "Log in",
+    "regester": "Sign up",
+    "password": "Password",
+    "plTaikhoan": "Please enter your account",
+    "plMatkhau": "Please enter your password",
+    "messTK": "Please enter your email!",
+    "messMK": "Please enter your password!"
+  },
+  "chatbot": {
+    "messenger": "👋 Hello! I'm your AI assistant at Tiki. I'm still in development, so I might not always be accurate. You can give feedback to help me improve. I'm ready to answer your questions. How can I assist you today? ^^"
+  },
+  "404": {
+    "title": "404",
+    "subtitle": "Page not found",
+    "description": "Sorry, we couldn’t find the page you’re looking for. It might have been moved or deleted.",
+    "backToHome": "Back to home"
+  },
+  "modalPayment": {
+    "title": "Payment",
+    "tab1": {
+      "title": "Method"
+    },
+    "tab2": {
+      "title": "Payment"
+    },
+    "radio": {
+      "online": "Pay by card",
+      "offline": "Pay by cash"
+    },
+    "button": {
+      "next": "Next",
+      "back": "Back",
+      "submit": "Pay"
+    },
+    "form": {
+      "cardNumber": "Card number",
+      "cardNumberError": "Must be 4 digits",
+      "cardNumberRequired": "Card number is required!",
+      "cardNumberPattern": "Must be numeric",
+      "expiry": "Expiry date",
+      "expiryRequired": "Expiry date is required!",
+      "expiryPlaceholder": "MM/YY",
+      "cardholderPlaceholder": "Enter cardholder name",
+      "cardholder": "Cardholder name",
+      "cardholderRequired": "Cardholder name is required!",
+      "cardholderPattern": "Must contain only letters",
+      "cvv": "CVV",
+      "cvvRequired": "Must be 3 digits"
+    },
+    "cash": {
+      "amount": "Amount to pay in cash:",
+      "currency": "$"
+    }
+  },
+  "modalReBooking": {
+    "title": "You have already booked this room",
+    "message": "Do you want to continue booking this room?",
+    "okText": "Continue",
+    "cancelText": "No"
+  },
+  "updateImage": {
+    "title": "Change Profile Picture",
+    "form": {
+      "chooseImage": "Please select an image!"
+    },
+    "button": {
+      "update": "Update",
+      "cancel": "Cancel"
+    },
+    "message": {
+      "error": {
+        "chooseImage": "You haven't selected a profile picture!",
+        "update": "Failed to update profile picture!"
+      },
+      "success": {
+        "update": "Profile picture updated successfully!"
+      }
+    }
+  }
+}

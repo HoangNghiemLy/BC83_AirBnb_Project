@@ -1,0 +1,302 @@
+{
+  "homepage": {
+    "locale": "Ngôn ngữ",
+    "mode": "Chế độ",
+    "Locations": {
+      "title": "Tìm phòng khó, có AirBnb lo",
+      "description1": "Homestay",
+      "description2": "Villa",
+      "description3": "View Biển",
+      "description4": "Thiên nhiên"
+    },
+    "SelectForm": {
+      "location": "Địa điểm",
+      "find_location": "Tìm kiếm địa điểm",
+      "choose_location": "Chọn địa điểm",
+      "none": "Không",
+      "time": "Thời gian",
+      "Add_guest": "Thêm khách",
+      "guest": "Khách"
+    },
+    "Footer": {
+      "row1": {
+        "emailUs": "Gửi Email Cho Chúng Tôi",
+        "customerServices": "Dịch Vụ Khách Hàng",
+        "Partner": "Đối Tác"
+      },
+      "row2": {
+        "title": "Giới Thiệu",
+        "how_airbnb_works": "Phương Thức Hoạt Động Của Airbnb",
+        "newsroom": "Trang Tin Tức",
+        "investors": "Nhà Đầu Tư",
+        "airbnb_plus": "Airbnb Plus",
+        "airbnb_luxe": "Airbnb Luxe",
+        "hotel_tonight": "HotelTonight",
+        "airbnb_for_work": "Airbnb For Work",
+        "thanks_to_hosts": "Nhờ Có Host, Mọi Điều Đều Có Thể",
+        "careers": "Cơ Hội Nghề Nghiệp"
+      },
+      "row3": {
+        "title": "Cộng Đồng",
+        "diversity_belonging": "Sự Đa Dạng Và Cảm Giác Thân Thuộc",
+        "accessibility_features": "Tiện Nghi Phù Hợp Cho Người Khuyết Tật",
+        "airbnb_affiliates": "Đối Tác Liên Kết Airbnb",
+        "frontline_stays": "Chỗ Ở Cho Tuyến Đầu",
+        "guest_referrals": "Lượt Giới Thiệu Của Khách",
+        "airbnb_org": "Airbnb.org"
+      },
+      "row4": {
+        "title": "Đón Tiếp Khách",
+        "renting_home": "Cho Thuê Nhà",
+        "host_online_experience": "Tổ Chức Trải Nghiệm Trực Tuyến",
+        "host_experience": "Tổ Chức Trải Nghiệm",
+        "responsible_hosting": "Đón Tiếp Khách Có Trách Nhiệm",
+        "resource_center": "Trung Tâm Tài Nguyên",
+        "community_center": "Trung Tâm Cộng Đồng",
+        "sub": "Đăng Ký Nhận Bản Tin",
+        "subscribe": "Đăng Ký",
+        "flow": "Theo Dõi"
+      }
+    }
+  },
+  "rooms": {
+    "favourite": "Yêu thích",
+    "title": "Danh Sách Các Phòng Hiện Tại",
+    "notRoom": "Hiện Tại Không Có Phòng Với Số Lượng Khách Theo Yêu Cầu",
+    "listRoom": "Danh sách Phòng",
+    "Guests": "Khách",
+    "Bedrooms": "Phòng ngủ",
+    "Beds": "Giường",
+    "Bathrooms": "Phòng tắm",
+    "night": "Đêm"
+  },
+  "message": {
+    "success": {
+      "login": "Đăng nhập thành công!",
+      "regester": "Đăng ký thành công",
+      "delete": "Xóa thành công!",
+      "update": "Cập nhật thành công!",
+      "logout": "Đăng xuất thành công!",
+      "comment": "Bình luận thành công!",
+      "successBooking": "Đặt phòng thành công!"
+    },
+    "warning": {
+      "see-more": "Đăng nhập để xem thông tin cá nhân!",
+      "chooseLocale": "Vui lòng chọn địa điểm trước khi tìm kiếm!",
+      "loginBooking": "Đăng nhập để đặt phòng!",
+      "guestOne": "Phải có tối thiểu 1 khách!",
+      "guestMore": "Đã đạt số lượng khách tối đa!"
+    },
+    "error": {
+      "not-id": "Không tìm thấy ID để xoá.",
+      "chooseImage": "Vui lòng chọn hình hợp lệ!",
+      "delete": "Xóa thất bại!",
+      "update": "Cập nhật thất bại!",
+      "comment": "Bình luận thất bại!",
+      "errorBooking": "Đặt phòng thất bại!",
+      "notData": "Không có dữ liệu phòng!",
+      "login": "Đăng nhập thất bại!",
+      "regester": "Đăng ký thất bại!"
+    },
+    "info": {
+      "not-title": "Hiện chưa có danh hiệu mới",
+      "seeProfile": "Vào trang cá nhân để xem thông tin!"
+    }
+  },
+  "detailPage": {
+    "Vietnam": "Việt Nam",
+    "titleProfile": "* Vào trang User để xem thông tin phòng đã đặt",
+    "title": "Toàn bộ căn hộ - Chủ nhà",
+    "titleLocal": "Chỗ ở tại khu vực bản đồ đã chọn",
+    "titleStart": "Một trong những ngôi nhà được yêu thích nhất trên Airbnb dựa trên điểm xếp hạng, đánh giá và độ tin cậy",
+    "utilities": "Các tiện ích đi kèm",
+    "noutilities": "Không có tiện ích đi kèm",
+    "features": [
+      {
+        "icon": "fa-home",
+        "title": "Toàn bộ nhà",
+        "desc": "Bạn sẽ có chung cư cao cấp cho riêng mình."
+      },
+      {
+        "icon": "fa-broom",
+        "title": "Vệ sinh tăng cường",
+        "desc": "Chủ nhà này đã cam kết thực hiện quy trình vệ sinh tăng cường 5 bước của Airbnb."
+      },
+      {
+        "icon": "fa-award",
+        "title": "Chủ nhà siêu cấp",
+        "desc": "Chủ nhà siêu cấp là những chủ nhà có kinh nghiệm, được đánh giá cao và cam kết mang lại trải nghiệm tuyệt vời."
+      },
+      {
+        "icon": "fa-stopwatch",
+        "title": "Miễn phí hủy trong 48 giờ",
+        "desc": "Bạn sẽ được miễn phí hủy phòng trong 48 giờ."
+      }
+    ],
+    "amenities": {
+      "washingMachine": "Máy giặt",
+      "iron": "Bàn là",
+      "tv": "Tivi",
+      "airConditioner": "Điều hòa",
+      "wifi": "Wifi",
+      "kitchen": "Bếp",
+      "parking": "Bãi đỗ xe",
+      "pool": "Hồ bơi",
+      "steamIron": "Bàn ủi"
+    },
+    "Platinum": "Bạch kim",
+    "Gold": "Vàng",
+    "Silver": "Bạc",
+    "checkIn": "Nhận phòng",
+    "checkOut": "Trả phòng",
+    "cleaning": "Phí vệ sinh",
+    "total": "Tổng cộng trước thuế",
+    "booking": "Đặt phòng"
+  },
+  "comment": {
+    "title": "Bạn chỉ có thể đánh giá sau khi đã trải nghiệm phòng",
+    "button": "Đánh giá",
+    "comment": "Bình luận",
+    "arrange": "Sắp xếp",
+    "newest": "Mới nhất",
+    "oldest": "Cũ nhất",
+    "highest": "Cao nhất",
+    "lowest": "Thấp nhất",
+    "chooseStart": "Vui lòng chọn số sao",
+    "writeComment": "Viết bình luận...",
+    "noComment": "Bạn chưa có nội dung đánh giá!",
+    "notComment": "Hiện không có bình luận nào!",
+    "Collapse": "Thu gọn",
+    "seeMore": "Hiển thị thêm"
+  },
+  "inforUser": {
+    "title": "THÔNG TIN NGƯỜI DÙNG",
+    "update": "Cập nhật ảnh",
+    "verify": "Xác minh danh tính",
+    "verifyUser": "Xác minh danh tính của bạn để nhận huy hiệu!",
+    "superHost": "Chủ nhà siêu cấp",
+    "getBadge": "Nhận huy hiệu",
+    "confirmed": "ADMIN ĐÃ XÁC NHẬN",
+    "email": "Địa chỉ email",
+    "phone": "Số điện thoại",
+    "start": "Bắt đầu tham gia vào 2025",
+    "hello": "Xin chào, tôi là",
+    "editProfile": "Chỉnh sửa hồ sơ",
+    "roomRented": "Phòng đã thuê",
+    "notRoom": "Hiện bạn chưa có phòng, bạn có muốn đặt phòng?",
+    "deleteRoom": "Xoá phòng đã đặt",
+    "sureDelete": "Bạn có chắc muốn xóa phòng đã đặt không?",
+    "yes": "Có",
+    "no": "Không",
+    "form": {
+      "title": "Cập nhật thông tin cá nhân",
+      "okText": "Cập nhật",
+      "cancelText": "Hủy",
+      "email": "Email",
+      "emailInvalid": "Email không hợp lệ!",
+      "emailRequired": "Vui lòng nhập email!",
+      "phone": "Số điện thoại",
+      "phoneRequired": "Vui lòng nhập số điện thoại!",
+      "phoneNumberOnly": "Phải là số",
+      "phoneLength": "Phải có 10 số",
+      "gender": "Giới tính",
+      "genderRequired": "Vui lòng chọn giới tính!",
+      "male": "Nam",
+      "female": "Nữ",
+      "name": "Tên",
+      "nameTooltip": "Tên hiển thị với mọi người",
+      "nameRequired": "Vui lòng nhập tên người dùng!",
+      "birthday": "Ngày sinh",
+      "birthdayRequired": "Vui lòng chọn ngày sinh!"
+    }
+  },
+  "menu": {
+    "title": "Đăng nhập bằng Google",
+    "home": "Trang chủ",
+    "room": "Phòng",
+    "list": "Danh sách",
+    "favourite": "Yêu thích",
+    "contact": "Liên hệ",
+    "profile": "Trang cá nhân",
+    "admin": "Trang admin",
+    "logout": "Đăng xuất",
+    "login": "Đăng nhập",
+    "regester": "Đăng ký",
+    "password": "Mật khẩu",
+    "plTaikhoan": "Vui lòng nhập tài khoản",
+    "plMatkhau": "Vui lòng nhập mật khẩu",
+    "messTK": "Vui lòng nhập email!",
+    "messMK": "Vui lòng nhập mật khâu!"
+  },
+  "chatbot": {
+    "messenger": "👋 Xin chào! Mình là trợ lý AI của bạn tại Tiki. Mình đang phát triển nên không phải lúc nào cũng đúng. Bạn có thể phản hồi để giúp mình cải thiện tốt hơn. Mình sẵn sàng trả lời câu hỏi của bạn. Hôm nay bạn cần mình hỗ trợ gì hông? ^^"
+  },
+  "404": {
+    "title": "404",
+    "subtitle": "Trang không tồn tại",
+    "description": "Xin lỗi, chúng tôi không thể tìm thấy trang bạn yêu cầu. Có thể đường dẫn đã bị thay đổi hoặc trang đã bị xóa.",
+    "backToHome": "Quay về trang chủ"
+  },
+  "modalPayment": {
+    "title": "Thanh toán",
+    "tab1": {
+      "title": "Hình thức"
+    },
+    "tab2": {
+      "title": "Thanh toán"
+    },
+    "radio": {
+      "online": "Thanh toán bằng thẻ",
+      "offline": "Thanh toán bằng tiền mặt"
+    },
+    "button": {
+      "next": "Tiếp",
+      "back": "Quay lại",
+      "submit": "Thanh toán"
+    },
+    "form": {
+      "cardNumber": "Số thẻ",
+      "cardNumberError": "Phải có 4 số",
+      "cardNumberRequired": "Số thẻ không được để trống!",
+      "cardNumberPattern": "Phải là số",
+      "expiry": "Ngày hết hạn",
+      "expiryRequired": "Ngày hết hạn không được để trống!",
+      "expiryPlaceholder": "MM/YY",
+      "cardholderPlaceholder": "Vui lòng nhập tên chủ thẻ",
+      "cardholder": "Tên chủ thẻ",
+      "cardholderRequired": "Tên chủ thẻ không được để trống!",
+      "cardholderPattern": "Phải là chữ",
+      "cvv": "Mã thẻ",
+      "cvvRequired": "Phải có 3 số"
+    },
+    "cash": {
+      "amount": "Số tiền mặt cần trả:",
+      "currency": "$"
+    }
+  },
+  "modalReBooking": {
+    "title": "Phòng này bạn đã đặt",
+    "message": "Bạn có muốn tiếp tục đặt phòng này?",
+    "okText": "Tiếp tục",
+    "cancelText": "Không"
+  },
+  "updateImage": {
+    "title": "Thay đổi ảnh đại diện",
+    "form": {
+      "chooseImage": "Vui lòng chọn hình!"
+    },
+    "button": {
+      "update": "Cập nhật",
+      "cancel": "Hủy"
+    },
+    "message": {
+      "error": {
+        "chooseImage": "Bạn chưa chọn ảnh đại diện!",
+        "update": "Cập nhật ảnh đại diện thất bại!"
+      },
+      "success": {
+        "update": "Cập nhật ảnh đại diện thành công!"
+      }
+    }
+  }
+}
