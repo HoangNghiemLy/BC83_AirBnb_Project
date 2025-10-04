@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { Table, Avatar, Tag, Popconfirm } from "antd";
-import { DeleteOutlined, EditOutlined, UserOutlined } from "@ant-design/icons";
+import { DeleteOutlined, ToolOutlined, UserOutlined } from "@ant-design/icons";
 import { nguoiDungServices } from "../../services/nguoiDungServices";
 import {
   setCurrentPageAction,
@@ -108,7 +108,7 @@ export default function ListUser({ valueInput }: ListUserProps): ReactElement {
       fixed: "right",
       render: (_, record) => (
         <div>
-          <EditOutlined
+          <ToolOutlined
             onClick={() => {
               dispatch(fetchUserInfoAction(record.id))
                 .then(() => {
