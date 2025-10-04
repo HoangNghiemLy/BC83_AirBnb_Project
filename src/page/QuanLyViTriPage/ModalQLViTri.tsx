@@ -131,7 +131,7 @@ export default function ModalQLViTri({ valueInput }: ModalQLViTriProps) {
       >
         <Upload listType="picture" maxCount={1} accept="image/png, image/jpeg">
           <button
-            className="border-2 border-[#FE6B6E] py-2 px-3 rounded-md"
+            className="border-2 border-primary py-2 px-3 rounded-md"
             type="button"
           >
             <PlusOutlined />

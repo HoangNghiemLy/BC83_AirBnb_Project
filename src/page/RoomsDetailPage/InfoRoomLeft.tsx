@@ -41,7 +41,7 @@ export default function InfoRoomLeft() {
     }
     if (finalNum >= 3) {
       return (
-        <div className="text-yellow-300">
+        <div className="text-primary">
           <span>{t("detailPage.Gold")} </span>
           <i className="fa fa-award"></i>
         </div>
@@ -117,7 +117,7 @@ export default function InfoRoomLeft() {
       {Array.isArray(features) && features.length > 0 && (
         <div className="py-5 space-y-3 border-b-2 border-gray-300">
           {features.map((item, idx) => (
-            <div className="flex gap-2 text-[#FE6B6E]" key={idx}>
+            <div className="flex gap-2 text-primary" key={idx}>
               <div>
                 <i className={`fa ${item.icon}`}></i>
               </div>

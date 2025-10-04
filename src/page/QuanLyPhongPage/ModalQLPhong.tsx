@@ -166,7 +166,7 @@ export default function ModalQLPhong({ valueInput }: ModalQLPhongProps) {
           customRequest={({ onSuccess }) => onSuccess?.("ok")}
         >
           <button
-            className="border-2 border-[#FE6B6E] py-2 px-3 rounded-md"
+            className="border-2 border-primary py-2 px-3 rounded-md"
             type="button"
           >
             <PlusOutlined />

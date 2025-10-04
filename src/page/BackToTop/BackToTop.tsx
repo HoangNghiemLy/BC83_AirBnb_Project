@@ -1,7 +1,7 @@
 // src/components/BackToTop.jsx
 import { useEffect, useState } from "react";
-import { ArrowUp } from "lucide-react"; 
-import "./BackToTop.scss"; 
+import { ArrowUp } from "lucide-react";
+import "./BackToTop.scss";
 
 export default function BackToTop() {
   const [visible, setVisible] = useState(false);
@@ -24,7 +24,7 @@ export default function BackToTop() {
   return (
     <button
       onClick={scrollToTop}
-      className="fixed bottom-6 right-6 bg-[#FE6B6E] text-white p-3 rounded-full shadow-lg transition-all z-50"
+      className="fixed bottom-6 right-6 bg-primary text-white p-3 rounded-full shadow-lg transition-all z-50"
     >
       <ArrowUp />
     </button>

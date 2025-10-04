@@ -262,7 +262,7 @@ const SelectForm: React.FC<SelectFormProps> = ({
                   type="primary"
                   shape="circle"
                   icon={<SearchOutlined />}
-                  className="bg-red-500 hover:bg-red-600 text-white cursor-pointer"
+                  className="bg-primary hover:opacity-80 text-white cursor-pointer"
                   onClick={handleSearch}
                 />
               </div>

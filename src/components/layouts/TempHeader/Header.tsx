@@ -208,7 +208,6 @@ const TempHeader: React.FC = () => {
         <div className="gap-3 items-center flex-shrink-0 flex px-8 relative">
           <div className="flex-row items-center gap-2 hidden md:flex">
             <DarkLightToggle />
-
           </div>
 
           {user ? (
@@ -216,8 +215,8 @@ const TempHeader: React.FC = () => {
               <div
                 ref={userIconRef}
                 className={`w-12 h-12 rounded-full flex items-center justify-center cursor-pointer bg-gray-800 text-white transition-all duration-300 ${
-                  showDropdown ? "ring-4 ring-red-400" : "ring-2 ring-gray-300"
-                } hover:ring-4 hover:ring-red-400`}
+                  showDropdown ? "ring-4 ring-primary" : "ring-2 ring-gray-300"
+                } hover:ring-4 hover:ring-primary`}
                 onClick={() => setShowDropdown((prev) => !prev)}
               >
                 {user.user.avatar ? (
@@ -281,7 +280,7 @@ const TempHeader: React.FC = () => {
                     <li>
                       <button
                         onClick={handleLogout}
-                        className="block w-full text-left px-4 py-2 text-red-600 hover:bg-red-100"
+                        className="block w-full text-left px-4 py-2 text-primary hover:bg-primary/10"
                       >
                         {t("menu.logout")}
                       </button>
@@ -295,8 +294,8 @@ const TempHeader: React.FC = () => {
               <div
                 ref={userIconRef}
                 className={`w-12 h-12 rounded-full flex items-center justify-center cursor-pointer bg-gray-800 text-white transition-all duration-300 ${
-                  showDropdown ? "ring-4 ring-red-400" : "ring-2 ring-gray-300"
-                } hover:ring-4 hover:ring-red-400`}
+                  showDropdown ? "ring-4 ring-primary" : "ring-2 ring-gray-300"
+                } hover:ring-4 hover:ring-primary`}
                 onClick={() => setShowDropdown((prev) => !prev)}
               >
                 <i className="fas fa-user text-xl"></i>
@@ -385,7 +384,7 @@ const TempHeader: React.FC = () => {
                           to={link}
                           className={({ isActive }) =>
                             `block text-left font-semibold text-menu ${
-                              isActive ? "text-red-400" : "text-white" // Adjust for mobile menu styling
+                              isActive ? "text-primary" : "text-white" // Adjust for mobile menu styling
                             }`
                           }
                         >
@@ -411,7 +410,6 @@ const TempHeader: React.FC = () => {
                   <span className="text-white font-semibold">
                     {t("homepage.locale")}
                   </span>
-
                 </li>
               </ul>
             )}

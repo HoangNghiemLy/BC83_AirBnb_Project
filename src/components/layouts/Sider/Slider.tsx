@@ -85,13 +85,12 @@ export default function Slider({ content }: SliderProps) {
     ),
   ];
 
-  // 🎨 Style màu sắc mới
   const siderStyle = {
-    background: "linear-gradient(180deg, #1e3c72 0%, #2a5298 100%)", // xanh dương gradient
+    background: "linear-gradient(180deg, #1e3c72 0%, #2a5298 100%)",
   };
 
   const headerStyle = {
-    background: "linear-gradient(135deg, #764ba2 0%, #667eea 100%)", // tím - xanh gradient
+    background: "linear-gradient(135deg, #764ba2 0%, #667eea 100%)",
     color: "white",
   };
 
@@ -101,7 +100,12 @@ export default function Slider({ content }: SliderProps) {
 
   return (
     <Layout style={{ minHeight: "100vh" }}>
-      <Sider collapsible collapsed={collapsed} trigger={null} style={siderStyle}>
+      <Sider
+        collapsible
+        collapsed={collapsed}
+        trigger={null}
+        style={siderStyle}
+      >
         <div className="demo-logo-vertical" />
         <Menu
           defaultSelectedKeys={[location.pathname]}
@@ -132,7 +136,9 @@ export default function Slider({ content }: SliderProps) {
               className={`w-12 h-12 rounded-full flex items-center justify-center cursor-pointer 
               bg-gradient-to-r from-purple-500 to-indigo-600 text-white 
               transition-all duration-300 shadow-lg 
-              ${showDropdown ? "ring-4 ring-yellow-400" : "ring-2 ring-white/50"} 
+              ${
+                showDropdown ? "ring-4 ring-yellow-400" : "ring-2 ring-white/50"
+              } 
               hover:ring-4 hover:ring-yellow-300`}
               onClick={() => setShowDropdown((prev) => !prev)}
             >
@@ -188,7 +194,7 @@ export default function Slider({ content }: SliderProps) {
                   <li>
                     <button
                       onClick={handleLogout}
-                      className="block w-full text-left px-4 py-2 text-red-600 hover:bg-gray-100"
+                      className="block w-full text-left px-4 py-2 text-primary hover:bg-primary/10"
                     >
                       Sign out
                     </button>

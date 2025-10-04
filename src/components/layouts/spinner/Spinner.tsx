@@ -9,7 +9,7 @@ export default function Spinner() {
 
   return isLoading ? (
     <div className="fixed h-screen w-screen top-0 left-0 bg-white z-20 flex justify-center items-center">
-      <HashLoader color="#FE6B6E" size={50} speedMultiplier={1} />
+      <HashLoader color="rgb(254, 107, 110)" size={50} speedMultiplier={1} />
     </div>
   ) : null;
 }

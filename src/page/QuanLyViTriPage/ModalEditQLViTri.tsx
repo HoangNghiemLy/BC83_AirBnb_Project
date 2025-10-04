@@ -160,7 +160,7 @@ export default function ModalEditQLViTri({
           customRequest={({ onSuccess }) => onSuccess?.("ok")}
         >
           <button
-            className="border-2 border-[#FE6B6E] mt-3 py-2 px-3 rounded-md"
+            className="border-2 border-primary mt-3 py-2 px-3 rounded-md"
             type="button"
           >
             Đổi hình

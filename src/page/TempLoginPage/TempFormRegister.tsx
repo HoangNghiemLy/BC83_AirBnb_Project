@@ -3,11 +3,17 @@ import { authServices } from "../../services/authServices";
 import dayjs from "dayjs";
 import { setModalContent } from "../../store/slices/userSlice";
 import { useDispatch } from "react-redux";
-import type { FormValues, RegisterRequest, TempFormRegisterProps } from "../../types/auth";
+import type {
+  FormValues,
+  RegisterRequest,
+  TempFormRegisterProps,
+} from "../../types/auth";
 import type { Dispatch } from "redux";
 import { useTranslation } from "react-i18next";
 
-export default function TempFormRegister({ onRegisterSuccess }: TempFormRegisterProps) {
+export default function TempFormRegister({
+  onRegisterSuccess,
+}: TempFormRegisterProps) {
   const { message } = AntdApp.useApp();
   const dispatch: Dispatch = useDispatch();
   const [form] = Form.useForm();
@@ -43,9 +49,9 @@ export default function TempFormRegister({ onRegisterSuccess }: TempFormRegister
   };
 
   return (
-    <div className="flex min-h-screen items-center justify-center bg-gradient-to-br from-pink-400 via-purple-500 to-indigo-600 p-6">
+    <div className="flex min-h-screen items-center justify-center bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 p-6">
       <div className="bg-white/95 backdrop-blur-xl shadow-2xl rounded-2xl p-8 w-full max-w-lg transform transition-all hover:scale-[1.02] duration-500">
-        <h2 className="text-3xl font-bold text-center mb-6 bg-gradient-to-r from-purple-600 to-pink-500 bg-clip-text text-transparent animate-pulse">
+        <h2 className="text-3xl font-bold text-center mb-6 text-primary animate-pulse">
           Đăng ký tài khoản Airbnb
         </h2>
 
@@ -57,13 +63,15 @@ export default function TempFormRegister({ onRegisterSuccess }: TempFormRegister
         >
           {/* Tên */}
           <Form.Item
-            label={<span className="font-semibold text-gray-700">Họ và tên</span>}
+            label={
+              <span className="font-semibold text-gray-700">Họ và tên</span>
+            }
             name="name"
             rules={[{ required: true, message: "Vui lòng nhập tên!" }]}
           >
             <Input
               placeholder="Điền tên vào đây..."
-              className="rounded-lg px-4 py-2 border-2 border-gray-200 focus:border-pink-500 focus:ring-2 focus:ring-pink-200 transition"
+              className="rounded-lg px-4 py-2 border-2 border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 transition"
             />
           </Form.Item>
 
@@ -84,7 +92,9 @@ export default function TempFormRegister({ onRegisterSuccess }: TempFormRegister
 
           {/* Mật khẩu */}
           <Form.Item
-            label={<span className="font-semibold text-gray-700">Mật khẩu</span>}
+            label={
+              <span className="font-semibold text-gray-700">Mật khẩu</span>
+            }
             name="password"
             rules={[
               { required: true, message: "Vui lòng nhập mật khẩu!" },
@@ -102,7 +112,9 @@ export default function TempFormRegister({ onRegisterSuccess }: TempFormRegister
 
           {/* Số điện thoại */}
           <Form.Item
-            label={<span className="font-semibold text-gray-700">Số điện thoại</span>}
+            label={
+              <span className="font-semibold text-gray-700">Số điện thoại</span>
+            }
             required
           >
             <Input.Group compact>
@@ -111,7 +123,11 @@ export default function TempFormRegister({ onRegisterSuccess }: TempFormRegister
                 noStyle
                 rules={[{ required: true, message: "Chọn mã vùng!" }]}
               >
-                <Select className="rounded-l-lg" placeholder="Mã vùng" style={{ width: "30%" }}>
+                <Select
+                  className="rounded-l-lg"
+                  placeholder="Mã vùng"
+                  style={{ width: "30%" }}
+                >
                   <Select.Option value="+84">+84 (Vietnam)</Select.Option>
                   <Select.Option value="+44">+44 (UK)</Select.Option>
                   <Select.Option value="+61">+61 (Australia)</Select.Option>
@@ -125,10 +141,15 @@ export default function TempFormRegister({ onRegisterSuccess }: TempFormRegister
                 rules={[
                   {
                     validator: (_, value) => {
-                      if (!value) return Promise.reject(new Error("Vui lòng nhập số điện thoại!"));
+                      if (!value)
+                        return Promise.reject(
+                          new Error("Vui lòng nhập số điện thoại!")
+                        );
                       if (!/^0\d{9}$/.test(value))
                         return Promise.reject(
-                          new Error("Số điện thoại phải bắt đầu bằng 0 và đủ 10 chữ số!")
+                          new Error(
+                            "Số điện thoại phải bắt đầu bằng 0 và đủ 10 chữ số!"
+                          )
                         );
                       return Promise.resolve();
                     },
@@ -139,7 +160,7 @@ export default function TempFormRegister({ onRegisterSuccess }: TempFormRegister
                   style={{ width: "70%" }}
                   placeholder="Nhập số điện thoại"
                   maxLength={10}
-                  className="rounded-r-lg border-2 border-gray-200 focus:border-pink-500 focus:ring-2 focus:ring-pink-200 transition"
+                  className="rounded-r-lg border-2 border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 transition"
                 />
               </Form.Item>
             </Input.Group>
@@ -148,7 +169,9 @@ export default function TempFormRegister({ onRegisterSuccess }: TempFormRegister
           {/* Ngày sinh & Giới tính */}
           <div className="flex gap-4">
             <Form.Item
-              label={<span className="font-semibold text-gray-700">Ngày sinh</span>}
+              label={
+                <span className="font-semibold text-gray-700">Ngày sinh</span>
+              }
               name="birthday"
               className="flex-1"
               rules={[{ required: true, message: "Chọn ngày sinh!" }]}
@@ -161,7 +184,9 @@ export default function TempFormRegister({ onRegisterSuccess }: TempFormRegister
             </Form.Item>
 
             <Form.Item
-              label={<span className="font-semibold text-gray-700">Giới tính</span>}
+              label={
+                <span className="font-semibold text-gray-700">Giới tính</span>
+              }
               name="gender"
               className="flex-1"
               rules={[{ required: true, message: "Chọn giới tính!" }]}
@@ -183,7 +208,7 @@ export default function TempFormRegister({ onRegisterSuccess }: TempFormRegister
             <Button
               type="primary"
               htmlType="submit"
-              className="w-full bg-gradient-to-r from-pink-500 to-red-500 hover:opacity-90 text-white font-semibold h-12 rounded-lg shadow-lg transition-all duration-300"
+              className="w-full bg-primary hover:opacity-90 text-white font-semibold h-12 rounded-lg shadow-lg transition-all duration-300"
             >
               Đăng ký
             </Button>

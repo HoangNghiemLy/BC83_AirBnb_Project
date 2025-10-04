@@ -126,7 +126,7 @@ export default function ListBookedRoom() {
                 }}
                 className="z-50"
               >
-                <Button className="h-8 w-8 text-red-500">
+                <Button className="h-8 w-8 text-primary">
                   <DeleteOutlined />
                 </Button>
               </Popconfirm>

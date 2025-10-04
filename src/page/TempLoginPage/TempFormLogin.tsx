@@ -44,17 +44,15 @@ const TempFormLogin: React.FC<TempFormLoginProps> = ({ onLoginSuccess }) => {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 px-4">
+    <div className="flex items-center justify-center min-h-screen bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 px-4">
       <Card
         className="w-full max-w-md shadow-2xl rounded-2xl"
         bodyStyle={{ padding: "2rem" }}
       >
-        <h2 className="text-2xl font-bold text-center mb-2 text-gray-800">
+        <h2 className="text-2xl font-bold text-center mb-2 text-primary">
           {t("menu.login")} Airbnb
         </h2>
-        <p className="text-center text-gray-500 mb-6">
-          
-        </p>
+        <p className="text-center text-gray-500 mb-6"></p>
 
         <Form
           layout="vertical"
@@ -91,9 +89,10 @@ const TempFormLogin: React.FC<TempFormLoginProps> = ({ onLoginSuccess }) => {
           </Form.Item>
 
           {/* Buttons */}
-          <div className="flex justify-between mt-6">
+          <div className="flex justify-between mt-6 gap-4">
             <Button
-              className="bg-gradient-to-r from-red-500 to-orange-500 text-white font-medium px-6 rounded-md shadow-md hover:opacity-90"
+              size="large"
+              className="flex-1 border-2 border-primary text-primary bg-transparent hover:bg-primary hover:text-white font-semibold px-6 rounded-lg shadow-lg transition-all duration-300 transform hover:scale-105"
               onClick={() => dispatch(setModalContent("register"))}
             >
               {t("menu.regester")}
@@ -101,7 +100,8 @@ const TempFormLogin: React.FC<TempFormLoginProps> = ({ onLoginSuccess }) => {
             <Button
               type="primary"
               htmlType="submit"
-              className="bg-gradient-to-r from-indigo-600 to-purple-600 border-none text-white font-medium px-6 rounded-md shadow-md hover:opacity-90"
+              size="large"
+              className="flex-1 bg-gradient-to-r from-primary to-pink-600 border-none text-white font-semibold px-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
             >
               {t("menu.login")}
             </Button>

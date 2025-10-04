@@ -17,7 +17,7 @@ const NotFoundPage = () => {
           />
         </div>
         <div>
-          <h1 className="text-5xl text-center font-extrabold text-[#FE6B6E] mb-4">
+          <h1 className="text-5xl text-center font-extrabold text-primary mb-4">
             {t("404.title")}
           </h1>
 
