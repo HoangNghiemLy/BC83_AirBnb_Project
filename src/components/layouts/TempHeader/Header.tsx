@@ -406,11 +406,6 @@ const TempHeader: React.FC = () => {
                   </span>
                   <DarkLightToggle />
                 </li>
-                <li className="px-6 py-3 border-t border-gray-600 flex justify-between items-center">
-                  <span className="text-white font-semibold">
-                    {t("homepage.locale")}
-                  </span>
-                </li>
               </ul>
             )}
           </div>
