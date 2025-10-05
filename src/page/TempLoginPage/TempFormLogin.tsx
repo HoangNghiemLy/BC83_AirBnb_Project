@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Form, Input, Card, App as AntdApp } from "antd";
+import { Button, Form, Input, App as AntdApp } from "antd";
 import { authServices } from "../../services/authServices";
 import { useNavigate } from "react-router-dom";
 import { setLoginData, setModalContent } from "../../store/slices/userSlice";
@@ -29,8 +29,13 @@ const TempFormLogin: React.FC<TempFormLoginProps> = ({ onLoginSuccess }) => {
       localStorage.setItem("USER_LOGIN", JSON.stringify(userData));
       dispatch(getListIdBookingAction(user.id));
 
+      message.success("Đăng nhập thành công!");
+      
       if (onLoginSuccess) onLoginSuccess();
-      navigate("/");
+      
+      setTimeout(() => {
+        navigate("/");
+      }, 1000);
     } catch (err) {
       console.error("Login error:", err);
       message.error(t("message.error.login"));
@@ -44,15 +49,10 @@ const TempFormLogin: React.FC<TempFormLoginProps> = ({ onLoginSuccess }) => {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 px-4">
-      <Card
-        className="w-full max-w-md shadow-2xl rounded-2xl"
-        bodyStyle={{ padding: "2rem" }}
-      >
-        <h2 className="text-2xl font-bold text-center mb-2 text-primary">
-          {t("menu.login")} Airbnb
-        </h2>
-        <p className="text-center text-gray-500 mb-6"></p>
+    <div className="p-4">
+      <h2 className="text-2xl font-bold text-center mb-6 text-primary">
+        {t("menu.login")} Airbnb
+      </h2>
 
         <Form
           layout="vertical"
@@ -64,50 +64,52 @@ const TempFormLogin: React.FC<TempFormLoginProps> = ({ onLoginSuccess }) => {
         >
           {/* Email */}
           <Form.Item
-            label="Email"
+            label={<span className="font-semibold text-gray-700">Email</span>}
             name="email"
             rules={[{ required: true, message: t("menu.messTK") }]}
           >
             <Input
               prefix={<UserOutlined className="text-gray-400" />}
               placeholder={t("menu.plTaikhoan")}
-              className="rounded-md py-2"
+              className="rounded-lg px-4 py-2 border-2 border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 transition"
             />
           </Form.Item>
 
           {/* Password */}
           <Form.Item
-            label={t("menu.password")}
+            label={<span className="font-semibold text-gray-700">{t("menu.password")}</span>}
             name="password"
             rules={[{ required: true, message: t("menu.messMK") }]}
           >
             <Input.Password
               prefix={<LockOutlined className="text-gray-400" />}
               placeholder={t("menu.plMatkhau")}
-              className="rounded-md py-2"
+              className="rounded-lg px-4 py-2 border-2 border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 transition"
             />
           </Form.Item>
 
-          {/* Buttons */}
-          <div className="flex justify-between mt-6 gap-4">
-            <Button
-              size="large"
-              className="flex-1 border-2 border-primary text-primary bg-transparent hover:bg-primary hover:text-white font-semibold px-6 rounded-lg shadow-lg transition-all duration-300 transform hover:scale-105"
-              onClick={() => dispatch(setModalContent("register"))}
-            >
-              {t("menu.regester")}
-            </Button>
+          {/* Submit */}
+          <Form.Item>
             <Button
               type="primary"
               htmlType="submit"
-              size="large"
-              className="flex-1 bg-gradient-to-r from-primary to-pink-600 border-none text-white font-semibold px-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+              className="w-full bg-primary hover:opacity-90 text-white font-semibold h-12 rounded-lg shadow-lg transition-all duration-300"
             >
               {t("menu.login")}
             </Button>
-          </div>
+          </Form.Item>
         </Form>
-      </Card>
+        
+        <div className="text-center mt-4">
+          <span className="text-gray-500 text-sm">Chưa có tài khoản? </span>
+          <Button
+            type="link"
+            className="p-0 h-auto text-primary font-medium hover:text-pink-600"
+            onClick={() => dispatch(setModalContent("register"))}
+          >
+            {t("menu.regester")}
+          </Button>
+        </div>
     </div>
   );
 };

@@ -365,15 +365,29 @@ export default function ModalEditQLPhong({
             "doXe",
             "hoBoi",
             "banUi",
-          ].map((item) => (
-            <Form.Item
-              key={item}
-              name={item}
-              label={item.replace(/([A-Z])/g, " $1")}
-            >
-              <Switch checkedChildren="Có" unCheckedChildren="Không" />
-            </Form.Item>
-          ))}
+          ].map((item) => {
+            const labelMap: { [key: string]: string } = {
+              mayGiat: "Máy giặt",
+              banLa: "Bàn là",
+              tivi: "TV",
+              dieuHoa: "Điều hòa",
+              wifi: "WiFi",
+              bep: "Bếp",
+              doXe: "Đỗ xe",
+              hoBoi: "Hồ bơi",
+              banUi: "Bàn ủi",
+            };
+            
+            return (
+              <Form.Item
+                key={item}
+                name={item}
+                label={labelMap[item] || item}
+              >
+                <Switch checkedChildren="Có" unCheckedChildren="Không" />
+              </Form.Item>
+            );
+          })}
         </div>
       </Modal>
     </div>

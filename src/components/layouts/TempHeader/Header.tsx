@@ -417,7 +417,14 @@ const TempHeader: React.FC = () => {
         </div>
       </div>
 
-      <Modal open={isModalOpen} onCancel={handleCloseModal} footer={null}>
+      <Modal 
+        open={isModalOpen} 
+        onCancel={handleCloseModal} 
+        footer={null}
+        width={500}
+        centered
+        className="login-register-modal"
+      >
         {modalContent === "login" ? (
           <TempFormLogin
             onLoginSuccess={() => {

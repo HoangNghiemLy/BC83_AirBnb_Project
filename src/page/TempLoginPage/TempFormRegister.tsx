@@ -49,11 +49,10 @@ export default function TempFormRegister({
   };
 
   return (
-    <div className="flex min-h-screen items-center justify-center bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 p-6">
-      <div className="bg-white/95 backdrop-blur-xl shadow-2xl rounded-2xl p-8 w-full max-w-lg transform transition-all hover:scale-[1.02] duration-500">
-        <h2 className="text-3xl font-bold text-center mb-6 text-primary animate-pulse">
-          Đăng ký tài khoản Airbnb
-        </h2>
+    <div className="p-4">
+      <h2 className="text-2xl font-bold text-center mb-6 text-primary">
+        Đăng ký tài khoản Airbnb
+      </h2>
 
         <Form
           layout="vertical"
@@ -214,7 +213,6 @@ export default function TempFormRegister({
             </Button>
           </Form.Item>
         </Form>
-      </div>
     </div>
   );
 }

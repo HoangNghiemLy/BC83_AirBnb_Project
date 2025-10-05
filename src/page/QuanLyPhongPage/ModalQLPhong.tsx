@@ -268,15 +268,34 @@ export default function ModalQLPhong({ valueInput }: ModalQLPhongProps) {
           "doXe",
           "hoBoi",
           "banUi",
-        ].map((name) => (
-          <Form.Item key={name} name={name} label={name} initialValue={true}>
-            <Switch
-              checkedChildren="Có"
-              unCheckedChildren="Không"
-              defaultChecked
-            />
-          </Form.Item>
-        ))}
+        ].map((name) => {
+          const labelMap: { [key: string]: string } = {
+            mayGiat: "Máy giặt",
+            banLa: "Bàn là",
+            tivi: "TV",
+            dieuHoa: "Điều hòa",
+            wifi: "WiFi",
+            bep: "Bếp",
+            doXe: "Đỗ xe",
+            hoBoi: "Hồ bơi",
+            banUi: "Bàn ủi",
+          };
+          
+          return (
+            <Form.Item 
+              key={name} 
+              name={name} 
+              label={labelMap[name] || name} 
+              initialValue={true}
+            >
+              <Switch
+                checkedChildren="Có"
+                unCheckedChildren="Không"
+                defaultChecked
+              />
+            </Form.Item>
+          );
+        })}
       </div>
     </Modal>
   );

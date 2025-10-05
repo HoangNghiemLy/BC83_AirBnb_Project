@@ -86,6 +86,18 @@ export default function ListUser({ valueInput }: ListUserProps): ReactElement {
       render: (value: string) => dayjs(value).format("DD/MM/YYYY"),
     },
     {
+      title: "Số điện thoại",
+      dataIndex: "phone",
+      key: "phone",
+      render: (value: string) => value,
+    },
+    {
+      title: "Giới tính",
+      dataIndex: "gender",
+      key: "gender",
+      render: (value: boolean) => value ? "Nam" : "Nữ",
+    },
+    {
       title: "Email",
       dataIndex: "email",
       key: "email",
