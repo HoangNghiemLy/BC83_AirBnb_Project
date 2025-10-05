@@ -17,17 +17,17 @@ export default function Locations() {
     {
       id: 2,
       title: t("homepage.Locations.description2"),
-      image: "../../../public/images/Footer/villa.png",
+      image: "/images/Footer/villa.png",
     },
     {
       id: 3,
       title: t("homepage.Locations.description3"),
-      image: "../../../public/images/Footer/viewbien.png",
+      image: "/images/Footer/viewbien.png",
     },
     {
       id: 4,
       title: t("homepage.Locations.description4"),
-      image: "../../../public/images/Footer/thiennhien.png",
+      image: "/images/Footer/thiennhien.png",
     },
   ];
 

@@ -15,7 +15,7 @@ import klook from "../../../assets/logo/Klook.png";
 import traveloka from "../../../assets/logo/traveloka.png";
 import ivivu from "../../../assets/logo/ivivu.png";
 import booking from "../../../assets/logo/Booking.svg";
-
+import agoda from "../../../assets/logo/agoda.png";
 const Footer: React.FC = () => {
   const navigate = useNavigate();
   const { t } = useTranslation();
@@ -64,7 +64,7 @@ const Footer: React.FC = () => {
                   rel="noreferrer"
                 >
                   <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Agoda_logo_2019.svg/2560px-Agoda_logo_2019.svg.png"
+                    src={agoda}
                     className="w-10 h-10 object-contain hover:scale-110 transition-transform"
                     alt="agoda"
                   />
