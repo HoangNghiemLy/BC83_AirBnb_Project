@@ -153,14 +153,14 @@ export default function ListPhong({ valueInput }: ListPhongProps) {
       key: "action",
       fixed: "right",
       render: (_, dataObject) => (
-        <div>
+        <div className="flex items-center gap-2">
           <EditOutlined
             onClick={() => {
               dispatch(fetchPhongInfoAction(dataObject.id.toString()))
                 .then(() => dispatch(setIsModalEditOpenAction(true)))
                 .catch((err) => console.error(err));
             }}
-            className="text-2xl hover:cursor-pointer mr-2"
+            className="text-xl text-blue-600 hover:!text-blue-800 hover:bg-blue-50 hover:cursor-pointer transition-all duration-200 p-1 rounded"
           />
           <Popconfirm
             title="Xoá phòng"
@@ -172,7 +172,7 @@ export default function ListPhong({ valueInput }: ListPhongProps) {
               danger: true,
             }}
           >
-            <DeleteOutlined className="text-2xl hover:cursor-pointer" />
+            <DeleteOutlined className="text-xl text-red-600 hover:!text-red-800 hover:bg-red-50 hover:cursor-pointer transition-all duration-200 p-1 rounded" />
           </Popconfirm>
         </div>
       ),

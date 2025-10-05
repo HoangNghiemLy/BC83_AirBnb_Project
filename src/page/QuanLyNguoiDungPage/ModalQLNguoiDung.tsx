@@ -66,9 +66,14 @@ export default function ModalQLNguoiDung({
       dispatch(fetchListUserAction({ currentPage, valueInput }));
       dispatch(setIsModalOpenAction(false));
       message.success("Thêm thành công");
-    } catch (err) {
+    } catch (err: any) {
       console.error(err);
-      message.error("Thêm thất bại");
+            const errorContent = err?.response?.data?.content?.toLowerCase() || '';
+      if (errorContent.includes('email') && errorContent.includes('đã tồn tại')) {
+        message.error("Email đã tồn tại trong hệ thống!");
+      } else {
+        message.error("Thêm thất bại");
+      }
     } finally {
       setLoading(false);
     }

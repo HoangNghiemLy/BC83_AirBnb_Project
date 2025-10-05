@@ -103,7 +103,7 @@ export default function ListViTri({
       fixed: "right",
       key: "action",
       render: (_, dataObject) => (
-        <div>
+        <div className="flex items-center gap-2">
           <EditOutlined
             onClick={() => {
               dispatch(fetchViTriInfoAction(dataObject.id))
@@ -114,17 +114,17 @@ export default function ListViTri({
                   console.error(err);
                 });
             }}
-            className="text-2xl hover:cursor-pointer mr-2"
+            className="text-xl text-blue-600 hover:!text-blue-800 hover:bg-blue-50 hover:cursor-pointer transition-all duration-200 p-1 rounded"
           />
           <Popconfirm
-            title="Xoá người dùng"
-            description="Bạn có chắc muốn xóa người dùng?"
+            title="Xoá vị trí"
+            description="Bạn có chắc muốn xóa vị trí này?"
             onConfirm={() => confirm(dataObject.id)}
             okText="Có"
             cancelText="Không"
             okButtonProps={{ danger: true }}
           >
-            <DeleteOutlined className="text-2xl hover:cursor-pointer" />
+            <DeleteOutlined className="text-xl text-red-600 hover:!text-red-800 hover:bg-red-50 hover:cursor-pointer transition-all duration-200 p-1 rounded" />
           </Popconfirm>
         </div>
       ),

@@ -180,7 +180,7 @@ export default function Slider({ content }: SliderProps) {
                       href="/info-user"
                       className="block px-4 py-2 text-gray-600 hover:bg-gray-100 hover:text-black"
                     >
-                      To Page User
+                      Trang cá nhân
                     </a>
                   </li>
                   <li>
@@ -188,7 +188,7 @@ export default function Slider({ content }: SliderProps) {
                       href="/"
                       className="block px-4 py-2 text-gray-600 hover:bg-gray-100 hover:text-black"
                     >
-                      To Page Home
+                      Trang chủ
                     </a>
                   </li>
                   <li>
@@ -196,7 +196,7 @@ export default function Slider({ content }: SliderProps) {
                       onClick={handleLogout}
                       className="block w-full text-left px-4 py-2 text-primary hover:bg-primary/10"
                     >
-                      Sign out
+                      Đăng xuất
                     </button>
                   </li>
                 </ul>

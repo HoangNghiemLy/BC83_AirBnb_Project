@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { Table, Avatar, Tag, Popconfirm } from "antd";
-import { DeleteOutlined, ToolOutlined, UserOutlined } from "@ant-design/icons";
+import { DeleteOutlined, EditOutlined, UserOutlined } from "@ant-design/icons";
 import { nguoiDungServices } from "../../services/nguoiDungServices";
 import {
   setCurrentPageAction,
@@ -107,8 +107,8 @@ export default function ListUser({ valueInput }: ListUserProps): ReactElement {
       key: "action",
       fixed: "right",
       render: (_, record) => (
-        <div>
-          <ToolOutlined
+        <div className="flex items-center gap-2">
+          <EditOutlined
             onClick={() => {
               dispatch(fetchUserInfoAction(record.id))
                 .then(() => {
@@ -116,7 +116,7 @@ export default function ListUser({ valueInput }: ListUserProps): ReactElement {
                 })
                 .catch((err) => console.error(err));
             }}
-            className="text-2xl hover:cursor-pointer mr-2"
+            className="text-xl text-blue-600 hover:!text-blue-800 hover:bg-blue-50 hover:cursor-pointer transition-all duration-200 p-1 rounded"
           />
           <Popconfirm
             title="Xoá người dùng"
@@ -126,7 +126,7 @@ export default function ListUser({ valueInput }: ListUserProps): ReactElement {
             cancelText="Không"
             okButtonProps={{ danger: true }}
           >
-            <DeleteOutlined className="text-2xl hover:cursor-pointer" />
+            <DeleteOutlined className="text-xl text-red-600 hover:!text-red-800 hover:bg-red-50 hover:cursor-pointer transition-all duration-200 p-1 rounded" />
           </Popconfirm>
         </div>
       ),

@@ -80,7 +80,7 @@ export default function ListBooking({
       key: "action",
       fixed: "right",
       render: (_: unknown, dataObject: BookingTable) => (
-        <div>
+        <div className="flex items-center gap-2">
           <EditOutlined
             onClick={() => {
               if (dataObject.id !== undefined) {
@@ -95,7 +95,7 @@ export default function ListBooking({
                 console.error("ID không tồn tại");
               }
             }}
-            className="text-2xl hover:cursor-pointer mr-2"
+            className="text-xl text-blue-600 hover:!text-blue-800 hover:bg-blue-50 hover:cursor-pointer transition-all duration-200 p-1 rounded"
           />
           <Popconfirm
             title="Xoá đặt phòng"
@@ -111,7 +111,7 @@ export default function ListBooking({
             cancelText="Không"
             okButtonProps={{ danger: true }}
           >
-            <DeleteOutlined className="text-2xl hover:cursor-pointer" />
+            <DeleteOutlined className="text-xl text-red-600 hover:!text-red-800 hover:bg-red-50 hover:cursor-pointer transition-all duration-200 p-1 rounded" />
           </Popconfirm>
         </div>
       ),
