@@ -12,7 +12,7 @@ export default function Locations() {
     {
       id: 1,
       title: t("homepage.Locations.description1"),
-      image: "../../../public/images/Footer/homestay.png",
+      image: "/images/Footer/homestay.png",
     },
     {
       id: 2,
